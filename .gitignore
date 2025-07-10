@@ -1,0 +1,22 @@
+# Node modules
+**/node_modules/
+
+# Environment files
+**/.env
+
+# Logs
+**/logs
+*.log
+npm-debug.log*
+
+# Build outputs
+teamflow-landing-admin/dist
+backend/dist
+
+# IDE 설정 파일
+.vscode/
+.idea/
+
+# OS 파일
+.DS_Store
+Thumbs.db
