@@ -1,34 +1,16 @@
-# TeamFlow Landing & Admin Project
+[ TeamFlow Landing & Admin Project ]
 
-## 프로젝트 개요
-TeamFlow Landing & Admin은 프로젝트 및 팀 관리를 위한 웹 애플리케이션입니다.  
-React 프론트엔드와 Node.js/Express, MongoDB 백엔드로 구성되어 있습니다.
+-Project Overview
+TeamFlow Landing & Admin is a web application designed for managing projects and teams.
+It consists of a React frontend and a Node.js/Express backend with MongoDB as the database.
 
----
+-Technology Stack
+Frontend: React, React Router, Tailwind CSS
 
-## 프로젝트 구조
+Backend: Node.js, Express
 
-root/
-├── backend/ # 백엔드 서버 코드
-│ ├── models/
-│ ├── controllers/
-│ ├── server.js
-│ ├── package.json
-│ └── .env # 환경변수 파일 (gitignore 처리)
-│
-├── teamflow-landing-admin/ # 프론트엔드 React 앱
-│ ├── src/
-│ │ ├── components/
-│ │ ├── context/
-│ │ ├── pages/
-│ │ ├── App.jsx
-│ │ └── index.js
-│ ├── package.json
-│ └── vite.config.js
-│
-└── .gitignore
-└── README.md
+Database: MongoDB (Mongoose)
 
+Authentication: JWT (JSON Web Tokens), bcrypt for password hashing
 
----
-
+Others: dotenv for environment variables, cors for cross-origin requests

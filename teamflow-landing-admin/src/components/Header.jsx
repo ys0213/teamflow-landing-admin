@@ -49,7 +49,7 @@ const Header = () => {
         ) : (
           <>
             <Link to="/mypage" className="px-4 hover:text-blue-600 transition">
-              My Page
+              MyPage
             </Link>
             <Link
               onClick={handleLogout}
