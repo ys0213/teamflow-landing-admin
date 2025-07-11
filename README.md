@@ -5,6 +5,7 @@ TeamFlow Landing & Admin is a web application designed for managing projects and
 It consists of a React frontend and a Node.js/Express backend with MongoDB as the database.
 
 -Technology Stack
+
 Frontend: React, React Router, Tailwind CSS
 
 Backend: Node.js, Express
