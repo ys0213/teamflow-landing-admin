@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
-import User from "../../../backend/models/User";
 
 export default function TeamManagement() {
   const { token } = useAuth();              // token is now always in context
