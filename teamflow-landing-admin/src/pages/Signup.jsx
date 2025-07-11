@@ -8,6 +8,8 @@ export default function SignupPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -17,7 +19,7 @@ export default function SignupPage() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/signup", {
+      const res = await fetch(`${API}/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -8,6 +8,8 @@ const MyPage = () => {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
   if (!user) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -24,7 +26,7 @@ const MyPage = () => {
       return;
     }
     try {
-      const res = await fetch(`http://localhost:5000/users/${user._id?user._id:user.id}/password`, {
+      const res = await fetch(`${API}/users/${user._id?user._id:user.id}/password`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password: newPassword }),
@@ -50,7 +52,7 @@ const MyPage = () => {
     if (!confirm) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/users/${user._id?user._id:user.id}`, {
+      const res = await fetch(`${API}/users/${user._id?user._id:user.id}`, {
         method: "DELETE",
       });
 
