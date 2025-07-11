@@ -26,7 +26,7 @@ import {
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: "https://teamflow.vercel.app" }));
+app.use(cors({ origin: "https://teamflow-landing-admin.vercel.app" }));
 app.use(express.json());
 
 /* ----- JWT ----- */
