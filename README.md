@@ -6,7 +6,7 @@ It consists of a React frontend and a Node.js/Express backend with MongoDB as th
 
 -Technology Stack
 
-Frontend: React, React Router, Tailwind CSS
+Frontend: React, Tailwind CSS
 
 Backend: Node.js, Express
 
